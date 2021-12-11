@@ -26,14 +26,21 @@ let dataList = [
     {
         name: "CMC Materials (CCMP)",
         stockPrice: "$150"
+    },
+    {
+        name: "Bitcoin",
+        stockPrice: "$47,900"
     }        
     
 ];
 
+//storing the element in a variable
 const datafeed = document.querySelector(".data");
 
+//mapping through the list and accessing each key, value pair and returning it in the div
 let info = dataList.map(function(element) {
     return '<div>' + 'Company: ' + element.name + '<br />' + 'Stock price: ' +  element.stockPrice + '</div>'
 })
 
+//adding content of each key, value pair to the div element
 datafeed.innerHTML = info.join('\n');
