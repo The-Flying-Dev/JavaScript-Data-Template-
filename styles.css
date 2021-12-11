@@ -21,7 +21,7 @@ h1 {
 .data {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
     margin-bottom: 1em;
 }
 
